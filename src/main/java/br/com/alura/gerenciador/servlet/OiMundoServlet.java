@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class OiMundoServlet extends HttpServlet{
 	
 	public OiMundoServlet() {
-		System.out.println("Criando Oi Mundo Servlet");
+		//System.out.println("Criando Oi Mundo Servlet");
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class OiMundoServlet extends HttpServlet{
 			PrintWriter out = resp.getWriter();
 			out.println("<html>");
 			out.println("<body>");
-			out.println("oi mundo, parabéns vc escreveu o primeiro servlet.");
+			out.println("oi mundo, parabéns vc escreveu o primeiro servlet. (PRODUCAO)");
 			out.println("</body>");
 			out.println("</html>");
 			
