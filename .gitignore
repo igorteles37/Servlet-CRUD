@@ -2,6 +2,8 @@
 .project
 .settings
 .metadata
+target
+*/target/**
 bin
 bower_components
 build
