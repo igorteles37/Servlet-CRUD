@@ -1,0 +1,22 @@
+1. Compilar mvn clean package
+2. baixar um tomcat 
+3. Descompactar em uma pasta 
+4. colocar o .war dentro da pasta webapps
+5. Navegar com o prompt na pasta bin do tomcat
+6. Executar o comando startup.bat
+
+
+Alterar a versao do java no tomcat.
+
+Ele utilizar a variável de ambiente JAVA_HOME.
+
+Alterar a porta
+1. Entrar na pasta conf
+2. Editar o arquivo server.xml
+
+3. Alterar a propriedade abaixo para a porta desejada
+
+<Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" />
+
