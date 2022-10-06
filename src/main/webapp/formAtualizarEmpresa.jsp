@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<c:url value="/atualizaEmpresa" var="linkServletAtualizarEmpresa" />
+<c:url value="/entrada?acao=atualizaEmpresa" var="linkServletAtualizarEmpresa" />
 
 <!DOCTYPE html>
 <html>
