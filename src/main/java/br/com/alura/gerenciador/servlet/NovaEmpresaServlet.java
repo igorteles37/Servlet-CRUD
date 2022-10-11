@@ -17,7 +17,7 @@ import br.com.alura.gerenciador.modelo.Empresa;
 /**
  * Servlet implementation class NovaEmpresaServlet
  */
-@WebServlet("/cadastraEmpresa")
+//@WebServlet("/cadastraEmpresa")
 public class NovaEmpresaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

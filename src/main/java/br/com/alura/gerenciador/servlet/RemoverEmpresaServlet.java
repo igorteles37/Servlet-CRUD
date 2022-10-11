@@ -13,7 +13,7 @@ import br.com.alura.gerenciador.modelo.Banco;
 /**
  * Servlet implementation class RemoverEmpresaServlet
  */
-@WebServlet("/removeEmpresa")
+//@WebServlet("/removeEmpresa")
 public class RemoverEmpresaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
