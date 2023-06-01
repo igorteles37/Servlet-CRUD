@@ -14,7 +14,7 @@ import br.com.alura.gerenciador.modelo.Empresa;
 
 public class CadastraEmpresa {
 	
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String  executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String paraNomeEmpresa = request.getParameter("nome");
 		String paraDataEmpresa = request.getParameter("data");
@@ -35,8 +35,10 @@ public class CadastraEmpresa {
 		Banco banco = new Banco();
 		banco.adiciona(empresa);
 		
-		request.setAttribute("empresa", empresa);
-		response.sendRedirect("entrada?acao=listaEmpresas");
+		//request.setAttribute("empresa", empresa);
+		//response.sendRedirect("entrada?acao=listaEmpresas");
+		
+		return "redirect:entrada?acao=listaEmpresas";
 		
 	}
 

@@ -14,15 +14,13 @@ import br.com.alura.gerenciador.modelo.Empresa;
 public class ListaEmpresas {
 	
 	
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Banco banco = new Banco();
 		List<Empresa> listaEmpresas = banco.getEmpresas();
 		
 		request.setAttribute("empresas", listaEmpresas);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/listarEmpresas.jsp");
-		
-		rd.forward(request, response);
+		return "forward:listarEmpresas.jsp";
 	}
 	
 	

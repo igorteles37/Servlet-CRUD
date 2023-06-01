@@ -10,7 +10,7 @@
 <html>
 <head>
  <c:set var="codigo" value="1"/>
- <c:url value="/formNovaEmpresa.jsp" var="linkPaginaFormNovaEmpresa" />
+ <c:url value="/entrada?acao=cadastrarEmpresaForm" var="linkPaginaFormNovaEmpresa" />
  <c:url value="/entrada?acao=mostraEmpresa" var="linkServletMostrarEmpresa" />
  <c:url value="/entrada?acao=removeEmpresa" var="linkServletRemoverEmpresa" />
  
