@@ -10,13 +10,14 @@
 <title>Atualizar Empresa</title>
 </head>
 <body>
-	<c:import url="logout-parcial.jsp"></c:import>
-	
 	<form action="${linkServletNovaEmpresa}" method="post">
-		Nome: <input type="text"  name="nome" />
-		Data Abertura: <input type="text" name=data />
-		<input type="hidden" name="acao" value="CadastraEmpresa" />
-		<input type="submit" name="btnSubmter" value="Cadastrar" />
+		Login: <input type="text"  name="login" /><br><br>
+		Senha: <input type="password" name="senha" /><br><br>
+		<input type="hidden" name="acao" value="Login" />
+		<input type="submit" name="btnSubmter" value="Entrar" />
 	</form>
+	<br>
+	<b>${mensagem}</b>
+	
 </body>
 </html>

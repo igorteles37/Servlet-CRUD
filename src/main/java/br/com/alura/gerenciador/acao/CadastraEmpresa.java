@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.acoes;
+package br.com.alura.gerenciador.acao;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -8,11 +8,12 @@ import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
 
-public class CadastraEmpresa {
+public class CadastraEmpresa implements Acao{
 	
 	public String  executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -35,10 +36,12 @@ public class CadastraEmpresa {
 		Banco banco = new Banco();
 		banco.adiciona(empresa);
 		
-		//request.setAttribute("empresa", empresa);
+		
+		//HttpSession sessao = request.getSession();
+		//sessao.setAttribute("empresa", empresa);
 		//response.sendRedirect("entrada?acao=listaEmpresas");
 		
-		return "redirect:entrada?acao=listaEmpresas";
+		return "redirect:entrada?acao=ListaEmpresas";
 		
 	}
 

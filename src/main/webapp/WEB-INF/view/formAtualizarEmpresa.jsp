@@ -10,12 +10,15 @@
 <title>Atualizar Empresa</title>
 </head>
 <body>
+
+	<c:import url="logout-parcial.jsp"></c:import>
+
 	<form action="${linkEntradaServlet}" method="post">
 		Nome: <input type="text" value="${empresa.nome}" name="nome" />
 		Data Abertura: <input value="<fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy" />" type="text" name=data />
 		<input type="hidden" name="id" value="${empresa.id}" />
-		<input type="hidden" name="acao" value="atualizaEmpresa" />
-		<input type="submit" name="btnSubmter" value="Atualizar" />
+		<input type="hidden" name="acao" value="AtualizaEmpresa" />
+		<input type="submit" name="btnSubmter" value="Atualiza Empresa" />
 	</form>
 </body>
 </html>
